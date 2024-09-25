@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Razvan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .email-link {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .email-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Restaurant Razvan</h1>
+</header>
+
+<div class="container">
+  <!-- Customer Section -->
+  <h2>List of Customers</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>Iacob Razvan</td>
+      <td><a href="mailto:iacobrazvan@example.com" class="email-link">iacobrazvan@example.com</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Matei Corvin</td>
+      <td><a href="mailto:mateicorvin@example.com" class="email-link">mateicorvin@example.com</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Ionescu Mihai</td>
+      <td><a href="mailto:ionescumihai@example.com" class="email-link">ionescumihai@example.com</a></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <!-- Category Section -->
+  <h2>List of Categories</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mâncare</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Băuturi</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <!-- Product Section -->
+  <h2>List of Products</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Category ID</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>Pizza</td>
+      <td>30</td>
+      <td>1 (Mâncare)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Paste</td>
+      <td>35</td>
+      <td>1 (Mâncare)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>CocaCola</td>
+      <td>10</td>
+      <td>2 (Băuturi)</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <!-- Order Section -->
+  <h2>List of Orders</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>Order ID</th>
+      <th>Product ID</th>
+      <th>Employee ID (Handled By)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>100</td>
+      <td>2</td>
+      <td>1 (Marinescu Alexandru)</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>3</td>
+      <td>3 (David Andreescu)</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>1</td>
+      <td>2 (Catalin Scarlatescu)</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <!-- Employee Section -->
+  <h2>List of Employees</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Role</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>Marinescu Alexandru</td>
+      <td>Chelner</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Catalin Scarlatescu</td>
+      <td>Bucătar</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>David Andreescu</td>
+      <td>Barman</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  <p>&copy; 2024 Restaurant Management System</p>
+</footer>
+
+</body>
+</html>
